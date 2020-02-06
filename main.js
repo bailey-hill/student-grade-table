@@ -4,6 +4,6 @@ var gradeTable = new GradeTable(tableEl);
 var headerEl = $("header");
 var pageHeader = new PageHeader(headerEl);
 
-var app = new App(gradeTable);
+var app = new App(gradeTable, pageHeader);
 
 app.start();
