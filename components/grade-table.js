@@ -7,7 +7,21 @@ class GradeTable {
     $(".tableBody tbody").empty();
 
     for (var i = 0; 0 < grades.length; i++){
-    document.createElement("tr");
+     var tr = document.createElement("tr");
+     document.querySelector(".tableBody").appendChild(tr);
+
+      var td = document.createElement("td");
+      td.append(grades[i].name);
+      tr.append(td);
+
+      var td2 = document.createElement("td");
+      td2.append(grades[i].course);
+      tr.append(td2);
+
+      var td3 = document.createElement("td");
+      td3.append(grades[i].grade);
+      tr.append(td3);
+
     }
   }
 }
