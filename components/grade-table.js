@@ -21,7 +21,6 @@ class GradeTable {
       var td3 = document.createElement("td");
       td3.append(grades[i].grade);
       tr.append(td3);
-
     }
   }
 }

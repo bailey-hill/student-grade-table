@@ -8,6 +8,8 @@ class GradeForm {
   }
   handleSubmit(event){
     event.preventDefault();
+    var formData = new FormData(event.target);
+    formData.get();
     console.log("hi");
   }
 }
