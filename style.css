@@ -6,11 +6,20 @@ header {
   font-size: 25pt;
 }
 
-.row {
-  display: flex;
-  justify-content: space-between;
+.rowHeader {
+   display: flex;
+  justify-content: flex-start;
 }
 
-.average {
-  text-align: end;
+.buttonRow {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.buttonAdd {
+  margin: 5px;
+}
+
+.buttonCancel {
+  margin: 5px;
 }
