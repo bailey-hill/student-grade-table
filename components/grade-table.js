@@ -6,7 +6,7 @@ class GradeTable {
     var tableBody = document.querySelector(".tableBody");
     $(".tableBody tbody").empty();
 
-    for (var i = 0; 0 < grades.length; i++){
+    for (var i = 0; i < grades.length; i++){
      var tr = document.createElement("tr");
      document.querySelector(".tableBody").appendChild(tr);
 
