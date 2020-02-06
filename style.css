@@ -6,3 +6,12 @@ header {
   font-size: 25pt;
   margin: 2%;
 }
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.average {
+  text-align: end;
+}
