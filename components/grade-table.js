@@ -3,8 +3,11 @@ class GradeTable {
     this.tableElement;
   }
   updateGrades(grades){
-    var tableBody = document.queryselector(".tableBody")
-    tableBody.empty();
-    console.log(grades);
+    var tableBody = document.querySelector(".tableBody");
+    $(".tableBody tbody").empty();
+
+    for (var i = 0; 0 < grades.length; i++){
+    document.createElement("tr");
+    }
   }
 }
