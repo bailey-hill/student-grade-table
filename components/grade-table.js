@@ -28,7 +28,10 @@ class GradeTable {
       grades[i].grade;
     } if (!grades){
       var noGrades = document.querySelector(".noGrades");
-
+      noGrades.classList.remove("d-none");
+    } else {
+      var noGrades = document.querySelector(".noGrades");
+      noGrades.classList.add("d-none")
     }
   }
   onDeleteClick(deleteGrade){
