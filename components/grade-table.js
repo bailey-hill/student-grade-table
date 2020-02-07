@@ -50,13 +50,16 @@ class GradeTable {
 
     button.classList.add("btn");
     button.classList.add("btn-danger");
-    gradeRow.append(button);
+    var deleteText = document.createTextNode("DELETE");
+    button.appendChild(deleteText);
+    gradeRow.append(tdButton);
+    tdButton.append(button);
 
     }
-    deleteGrade(){
-
-
+    button.addEventListener("click", this.deleteGrade);
+    deleteGrade(data.id){
 
     }
+    return gradeRow;
   }
 }
