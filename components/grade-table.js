@@ -57,9 +57,8 @@ class GradeTable {
 
     }
     button.addEventListener("click", this.deleteGrade);
-    deleteGrade(data.id){
 
-    }
+    deleteGrade(data.id);
     return gradeRow;
   }
 }
