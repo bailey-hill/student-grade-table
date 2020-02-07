@@ -3,8 +3,9 @@ class PageHeader{
     this.headerElement = headerElement;
   }
   updateAverage(newAverage){
-    var badgeEl = $(".badge");
-    badgeEl.append(newAverage);
+    var badgeEl = document.querySelector(".badge");
+    // badgeEl.append(newAverage);
+    badgeEl.textContent = newAverage;
     console.log(newAverage);
   }
 }
