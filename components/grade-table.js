@@ -23,4 +23,17 @@ class GradeTable {
       tr.append(td3);
     }
   }
+  onDeleteClick(deleteGrade){
+    this.deleteGrade = deleteGrade;
+  }
+  renderGradeRow(data, deleteGrade){
+    this.data = {};
+    deleteGrade(){
+      var gradeRow = document.createElement("tr");
+      var gradeEl = document.createElement("td");
+      var buttonTableBody = document.querySelector(".tableBody");
+
+
+    }
+  }
 }
