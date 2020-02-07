@@ -7,7 +7,7 @@ header {
 }
 
 .rowHeader {
-   display: flex;
+  display: flex;
   justify-content: flex-start;
 }
 
