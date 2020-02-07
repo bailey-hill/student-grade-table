@@ -23,11 +23,11 @@ class App {
     for (var i = 0; i < count; i++) {
       sum = sum + grades[i].grade;
   }
-  console.log(grades);
+    console.log(grades);
     var average = sum / count;
     var updatedAverage = average.toFixed(2);
     console.log(updatedAverage);
-  this.pageHeader.updateAverage(updatedAverage);
+    this.pageHeader.updateAverage(updatedAverage);
   console.log(average);
 }
   getGrades(){
@@ -41,7 +41,7 @@ class App {
   start(){
     this.getGrades(this.createGrade);
     this.gradeForm.onSubmit(this.createGrade);
-    this.gradeTable.onDeleteClick(this.deleteGrade)
+    this.gradeTable.onDeleteClick(this.deleteGrade);
   }
   createGrade(name, course, grade){
     console.log(name, course, grade);
@@ -55,8 +55,8 @@ class App {
     });
   }
   handleCreateGradeSuccess() {
-        this.getGrades();
-      }
+    this.getGrades();
+  }
   handleCreateGradeError(err) {
     console.error(err);
   }
