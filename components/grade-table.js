@@ -26,6 +26,9 @@ class GradeTable {
       this.renderGradeRow;
       this.deleteGrade;
       grades[i].grade;
+    } if (!grades){
+      var noGrades = document.querySelector(".noGrades");
+
     }
   }
   onDeleteClick(deleteGrade){
