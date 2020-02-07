@@ -27,7 +27,7 @@ class GradeTable {
     this.deleteGrade = deleteGrade;
   }
   renderGradeRow(data, deleteGrade){
-    var data = gades[i].grade;
+    // var data = gades[i].grade;
     for (var i = 0; i < grades.length; i++){
     var gradeRow = document.createElement("tr");
     var gradeEl = document.createElement("td");
@@ -37,15 +37,15 @@ class GradeTable {
 
     gradeRow.append(gradeEl);
     newTableBody.appendChild(gradeRow);
-    gradeEl.appendChild(data);
+    gradeEl.appendChild(data[i].grade);
 
 
     var td4 = document.createElement("td");
-    td4.append(grades[i].name);
+    td4.append(data[i].name);
     gradeRow.append(td4);
 
     var td5 = document.createElement("td");
-    td5.append(grades[i].course);
+    td5.append(data[i].course);
     gradeRow.append(td5);
 
     button.classList.add("btn");
