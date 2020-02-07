@@ -4,7 +4,7 @@ class GradeTable {
   }
   updateGrades(grades){
     var tableBody = document.querySelector(".tableBody");
-    $(".tableBody tbody").empty();
+    $(".tableBody").empty();
 
     for (var i = 0; i < grades.length; i++){
      var tr = document.createElement("tr");
@@ -21,7 +21,6 @@ class GradeTable {
       var td3 = document.createElement("td");
       td3.append(grades[i].grade);
       tr.append(td3);
-
     }
   }
 }
