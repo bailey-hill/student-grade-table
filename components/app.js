@@ -22,7 +22,9 @@ class App {
   }
   console.log(grades);
     var average = sum / count;
-  this.pageHeader.updateAverage(average);
+    var updatedAverage = average.toFixed(2);
+    console.log(updatedAverage);
+  this.pageHeader.updateAverage(updatedAverage);
   console.log(average);
 }
   getGrades(){
