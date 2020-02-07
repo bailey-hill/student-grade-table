@@ -27,12 +27,15 @@ class GradeTable {
     this.deleteGrade = deleteGrade;
   }
   renderGradeRow(data, deleteGrade){
-    this.data = {};
+    var gradeData = data;
     deleteGrade(){
       var gradeRow = document.createElement("tr");
       var gradeEl = document.createElement("td");
-      var buttonTableBody = document.querySelector(".tableBody");
+      var newTableBody = document.querySelector(".tableBody");
+      gradeRow.append(gradeEl);
+      newTableBody.appendChild(gradeRow);
 
+      gradeEl.appendChild(gradeData);
 
     }
   }
