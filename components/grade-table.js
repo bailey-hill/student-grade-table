@@ -27,15 +27,27 @@ class GradeTable {
     this.deleteGrade = deleteGrade;
   }
   renderGradeRow(data, deleteGrade){
-    var gradeData = data;
-    deleteGrade(){
-      var gradeRow = document.createElement("tr");
-      var gradeEl = document.createElement("td");
-      var newTableBody = document.querySelector(".tableBody");
-      gradeRow.append(gradeEl);
-      newTableBody.appendChild(gradeRow);
+    var data = gades[i].grade;
+    for (var i = 0; i < grades.length; i++){
+    var gradeRow = document.createElement("tr");
+    var gradeEl = document.createElement("td");
+    var newTableBody = document.querySelector(".tableBody");
+    gradeRow.append(gradeEl);
+    newTableBody.appendChild(gradeRow);
+    gradeEl.appendChild(data);
 
-      gradeEl.appendChild(gradeData);
+
+    var td4 = document.createElement("td");
+    td4.append(grades[i].name);
+    tr.append(td4);
+
+    var td5 = document.createElement("td");
+    td5.append(grades[i].course);
+    tr.append(td5);
+    }
+    deleteGrade(){
+
+
 
     }
   }
