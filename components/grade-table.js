@@ -32,6 +32,9 @@ class GradeTable {
     var gradeRow = document.createElement("tr");
     var gradeEl = document.createElement("td");
     var newTableBody = document.querySelector(".tableBody");
+    var button = document.createElement("button");
+    var tdButton = document.createElement("td");
+
     gradeRow.append(gradeEl);
     newTableBody.appendChild(gradeRow);
     gradeEl.appendChild(data);
@@ -39,11 +42,16 @@ class GradeTable {
 
     var td4 = document.createElement("td");
     td4.append(grades[i].name);
-    tr.append(td4);
+    gradeRow.append(td4);
 
     var td5 = document.createElement("td");
     td5.append(grades[i].course);
-    tr.append(td5);
+    gradeRow.append(td5);
+
+    button.classList.add("btn");
+    button.classList.add("btn-danger");
+    gradeRow.append(button);
+
     }
     deleteGrade(){
 
