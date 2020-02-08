@@ -41,8 +41,8 @@ class GradeTable {
     gradeEl.textContent = data.grade;
 
     button.classList.add("btn");
-    button.classList.add("btn-danger");
-    var deleteText = document.createTextNode("DELETE");
+    button.classList.add("btn-outline-danger");
+    var deleteText = document.createTextNode("Delete");
     button.appendChild(deleteText);
     tdButton.append(button);
     gradeRow.append(tdButton);
