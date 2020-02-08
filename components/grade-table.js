@@ -11,6 +11,12 @@ class GradeTable {
     for (var i = 0; i < grades.length; i++){
       var row = this.renderGradeRow(grades[i], this.deleteGrade)
       tableBody.append(row);
+    } if (grades.length === 0) {
+      var noGrades = document.querySelector("p");
+      noGrades.classList.remove("d-none");
+    } else {
+      var noGrades = document.querySelector("p");
+      noGrades.classList.add("d-none");
     }
   }
   onDeleteClick(deleteGrade){

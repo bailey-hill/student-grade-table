@@ -23,11 +23,11 @@ class App {
     for (var i = 0; i < count; i++) {
       sum = sum + grades[i].grade;
   }
-    console.log(grades);
-    var average = sum / count;
-    var updatedAverage = average.toFixed(2);
-    console.log(updatedAverage);
-    this.pageHeader.updateAverage(updatedAverage);
+  console.log(grades);
+  var average = sum / count;
+  var updatedAverage = average.toFixed(2);
+  console.log(updatedAverage);
+  this.pageHeader.updateAverage(updatedAverage);
   console.log(average);
 }
   getGrades(){
